@@ -27,6 +27,6 @@ https://play-cat.github.io/TravelAgent/
 - ✅ Scroll animations
 - ✅ Optimized assets for production build
 
-## 📸 Screenshots
+## 📸 Screenshot
 
-
+![Screenshot](https://github.com/play-cat/TravelAgent/raw/master/screenshot.jpg)
