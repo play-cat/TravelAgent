@@ -24,7 +24,9 @@ https://play-cat.github.io/TravelAgent/
 
 ## 🛠 Build Tools
 
-- **gulp-file-include** — used for modularizing the `index.html` file and injecting content into sliders automatically from JSON files.
+- **gulp-file-include**
+- used for modularizing the `index.html` file
+- injecting content into sliders automatically from JSON files.
 
 ## ✨ Features
 
