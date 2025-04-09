@@ -5,20 +5,22 @@ const overlay = document.querySelector('.overlay');
 const thxModal = document.querySelector('.thx-modal');
 const thxCloseBtn = document.querySelector('#thx');
 
-// form subscribe
+// forms
 const subscribeForm = document.querySelector('#subscribe-form');
+const heroForm = document.querySelector('#hero-form');
+const heroFormInputData = document.querySelector('#datepicker');
 
-const openModal = () => {
-  overlay.classList.toggle('none');
-  thxModal.classList.toggle('hide');
-  document.body.classList.toggle('no-scroll');
-};
+// const openModal = () => {
+//   overlay.classList.toggle('none');
+//   thxModal.classList.toggle('hide');
+//   document.body.classList.toggle('no-scroll');
+// };
 
-const closeModal = () => {
-  overlay.classList.toggle('none');
-  thxModal.classList.toggle('hide');
-  document.body.classList.toggle('no-scroll');
-};
+// const closeModal = () => {
+//   overlay.classList.toggle('none');
+//   thxModal.classList.toggle('hide');
+//   document.body.classList.toggle('no-scroll');
+// };
 
 const toggleModal = () => {
   overlay.classList.toggle('none');
@@ -31,6 +33,16 @@ subscribeForm.addEventListener('submit', e => {
   e.target.reset();
   // openModal();
   toggleModal();
+});
+
+heroForm.addEventListener('submit', e => {
+  e.preventDefault();
+  if (!heroFormInputData.value) {
+    alert('Будь ласка, виберіть дату перед відправкою!');
+  } else {
+    e.target.reset();
+    toggleModal();
+  }
 });
 
 thxCloseBtn.addEventListener('click', toggleModal);
