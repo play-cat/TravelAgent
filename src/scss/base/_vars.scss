@@ -1,0 +1,25 @@
+:root {
+  --container-padding: 15px;
+  --container-width: calc(1200px + var(--container-padding) * 2);
+
+  --font-main: 'CircularStd', sans-serif;
+  --font-accent: 'Manrope', sans-serif;
+  --font-titles: var(--font-main);
+
+  --page-bg: #fff;
+  --text-color: #181818;
+  --second-text-color: #909090;
+  --main-color: #181818;
+  --second-color: #909090;
+  --accent-color: #35aff4;
+  --link-color: var(--text-color);
+
+  --laptop-size: 1199px;
+  --tablet-size: 959px;
+  --mobile-size: 599px;
+}
+
+.dark {
+  --page-bg: #252526;
+  --text-color: #fff;
+}

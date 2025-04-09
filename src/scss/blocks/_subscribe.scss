@@ -1,0 +1,86 @@
+.subscribe {
+  $bg-img-size: 300px;
+
+  padding: 80px 0;
+  background-color: var(--accent-color);
+  color: #fff;
+  background-image: url('./../../img/icons/location-pin.svg');
+  background-position: 3vw center; /* x y */
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @include respond('desktop') {
+    background-position: -1vw center;
+  }
+
+  @include respond('desktop-s') {
+    background-position: -7vw center;
+  }
+
+  @include respond('laptop') {
+    padding: 48px 0;
+    background-position: -2vw center;
+  }
+
+  @include respond(840) {
+    background-position: -10vw center;
+  }
+
+  @include respond('tablet') {
+    background-image: none;
+  }
+
+  &__wrapper {
+    padding-left: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 64px;
+
+    @include respond('laptop') {
+      gap: 32px;
+    }
+
+    @include respond(840) {
+      padding-left: 110px;
+    }
+
+    @include respond('tablet') {
+      padding-left: 0;
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+
+    @include respond('laptop') {
+      flex: 1 1 50%;
+    }
+
+    @include respond('tablet') {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__descr {
+    font-size: 20px;
+  }
+
+  &__form {
+    flex: 1;
+
+    @include respond('laptop') {
+      flex: 1 1 50%;
+    }
+
+    @include respond('phone') {
+      width: 100%;
+    }
+  }
+}

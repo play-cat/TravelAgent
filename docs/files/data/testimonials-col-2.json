@@ -1,0 +1,50 @@
+[
+  {
+    "stars": 5,
+    "text": "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!",
+    "name": "Jone Herdun",
+    "role": "Travel Enthusiast",
+    "img": "04.jpg",
+    "col": 2
+  },
+  {
+    "stars": 4,
+    "text": "The travel website's customer service is top-notch! They were quick to respond to my queries and helped me plan a dream vacation. It was an excellent experience from start to finish.",
+    "name": "Mike Dremart",
+    "role": "Travel Enthusiast",
+    "img": "05.jpg",
+    "col": 2
+  },
+  {
+    "stars": 5,
+    "text": "An outstanding resource for travel enthusiasts! The website's destination reviews and travel advice were spot-on. I now trust their recommendations for all my trips..",
+    "name": "Hendra Matchel",
+    "role": "Travel Enthusiast",
+    "img": "06.jpg",
+    "col": 2
+  },
+  {
+    "stars": 5,
+    "text": "Amazing experience! The travel website made booking our vacation a breeze. Everything was well-organized, and we had a fantastic time exploring new places. Highly recommend!",
+    "name": "Jone Herdun",
+    "role": "Travel Enthusiast",
+    "img": "04.jpg",
+    "col": 2
+  },
+  {
+    "stars": 4,
+    "text": "The travel website's customer service is top-notch! They were quick to respond to my queries and helped me plan a dream vacation. It was an excellent experience from start to finish.",
+    "name": "Mike Dremart",
+    "role": "Travel Enthusiast",
+    "img": "05.jpg",
+    "col": 2
+  },
+  {
+    "stars": 5,
+    "text": "An outstanding resource for travel enthusiasts! The website's destination reviews and travel advice were spot-on. I now trust their recommendations for all my trips..",
+    "name": "Hendra Matchel",
+    "role": "Travel Enthusiast",
+    "img": "06.jpg",
+    "col": 2
+  }
+]

@@ -1,0 +1,68 @@
+$breakpoints: (
+  'desktop': 1440px,
+  'desktop-s': 1280px,
+  'laptop': 1024px,
+  'laptop-s': 992px,
+  'tablet': 768px,
+  'phone': 480px,
+  'phone-s': 320px,
+);
+
+// Mixin for media queries
+@mixin respond($device) {
+  @if map-has-key($breakpoints, $device) {
+    $breakpoint: map-get($breakpoints, $device);
+    @media screen and (max-width: $breakpoint) {
+      @content;
+    }
+  } @else if type-of($device) == 'number' {
+    @media screen and (max-width: #{$device}px) {
+      @content;
+    }
+  } @else {
+    @warn "Unknown breakpoint: #{$device}.";
+  }
+}
+// use
+// @include respond(tablet) {
+//   padding: 80px 30px;
+// }
+
+@mixin mediaBg() {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @content;
+  }
+}
+
+@mixin laptop() {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+// Адаптивний контейнер
+@mixin container($max-width: 1200px, $padding: 15px) {
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $padding;
+  padding-right: $padding;
+  width: 100%;
+}
+
+// use
+// .container {
+//   @include container(1140px, 20px);
+// }

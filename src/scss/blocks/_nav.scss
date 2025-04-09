@@ -1,0 +1,28 @@
+.nav {
+  font-size: 18px;
+
+  &__list {
+    display: flex;
+    column-gap: 24px;
+
+    a {
+      transition: all 0.2s ease-in;
+    }
+
+    & a:hover,
+    & a:focus,
+    & a:active,
+    & a.active {
+      color: var(--accent-color);
+    }
+  }
+
+  &_footer {
+    font-size: 14px;
+
+    .nav__list {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+}

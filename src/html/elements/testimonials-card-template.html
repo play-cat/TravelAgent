@@ -1,0 +1,23 @@
+<div class="swiper-slide">
+  <div class="card">
+    <div class="card__rating">
+      @@for (var i = 0; i < this.stars; i++) {
+      <img src="./../../../img/icons/star.svg" alt="Star rating on" />
+      } @@if (this.stars < 5) { @@for (var i = 5 - this.stars; i > 0; i--) {
+      <img src="./../../../img/icons/star-off.svg" alt="Star rating off" />
+      } }
+    </div>
+    <div class="descr card__descr">
+      <p>@@text</p>
+    </div>
+    <div class="card__author">
+      <div class="card__avatar">
+        <img src="./../../../img/testimonials/@@img" alt="avatar" />
+      </div>
+      <div class="card__title">
+        <div class="card__name">@@name</div>
+        <div class="card__role">@@role</div>
+      </div>
+    </div>
+  </div>
+</div>

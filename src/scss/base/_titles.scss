@@ -1,0 +1,51 @@
+.title {
+  // margin: 1em 0 0.5em;
+  font-family: var(--font-titles);
+  @include fluid-font-size(28px, 40px);
+  font-weight: 500;
+  line-height: 120%;
+
+  &_hero {
+    position: relative;
+    font-weight: 700;
+    z-index: 1;
+    @include fluid-font-size(32px, 72px);
+
+    @include respond('tablet') {
+      text-align: center;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      width: 267px;
+      height: 24px;
+      background: url('./../../img/hero/underline.svg') no-repeat center;
+      z-index: -1;
+
+      @include respond('tablet') {
+        bottom: -2px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  &_partners {
+    @include fluid-font-size(18px, 24px);
+    font-weight: 500;
+    line-height: 140%;
+    color: var(--second-text-color);
+  }
+
+  &_subscribe {
+    font-size: 28px;
+    color: #fff;
+
+    @include respond('tablet') {
+      text-align: center;
+    }
+  }
+}

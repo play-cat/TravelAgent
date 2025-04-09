@@ -1,0 +1,49 @@
+.partners {
+  padding: 60px 0;
+
+  @include respond('laptop') {
+    padding: 32px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 64px;
+    justify-content: space-between;
+    align-items: baseline;
+
+    @include respond('desktop-s') {
+      gap: 32px;
+    }
+
+    @include respond('laptop-s') {
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+    }
+  }
+
+  &__logos {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+
+    @include respond('desktop-s') {
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    img {
+      max-height: 40px;
+      object-fit: contain;
+
+      @include respond('laptop') {
+        max-height: 32px;
+      }
+
+      @include respond('laptop-s') {
+        max-height: 40px;
+      }
+    }
+  }
+}

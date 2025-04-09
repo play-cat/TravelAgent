@@ -1,0 +1,9 @@
+:host {
+  --color-fg-primary: #35aff4;
+  --color-btn-primary-fg: #35aff4;
+  --color-btn-primary-border: #35aff4;
+  --color-btn-primary-hover-bg: #35aff4;
+  --color-btn-primary-hover-border: #35aff4;
+  --primary-color: #35aff4;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImVhc2VwaWNrLXRoZW1lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0EiLCJmaWxlIjoiZWFzZXBpY2stdGhlbWUuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiOmhvc3Qge1xyXG4gIC0tY29sb3ItZmctcHJpbWFyeTogIzM1YWZmNDtcclxuICAtLWNvbG9yLWJ0bi1wcmltYXJ5LWZnOiAjMzVhZmY0O1xyXG4gIC0tY29sb3ItYnRuLXByaW1hcnktYm9yZGVyOiAjMzVhZmY0O1xyXG4gIC0tY29sb3ItYnRuLXByaW1hcnktaG92ZXItYmc6ICMzNWFmZjQ7XHJcbiAgLS1jb2xvci1idG4tcHJpbWFyeS1ob3Zlci1ib3JkZXI6ICMzNWFmZjQ7XHJcbiAgLS1wcmltYXJ5LWNvbG9yOiAjMzVhZmY0O1xyXG59XHJcbiJdfQ== */

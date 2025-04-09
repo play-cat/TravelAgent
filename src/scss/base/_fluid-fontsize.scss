@@ -1,0 +1,74 @@
+/**
+* Fluid Typography | SASS mixin with clamp() - @include fluid-font-size()
+* @param {$min_font_size} - Number in px
+* @param {$max_font_size} - Number in px,
+* @param {$min_viewport} - Number in px (optional | default 576px)
+* @param {$max_viewport} - Number in px (optional | default 1366px)
+* @returns - Font Size using clamp()
+* 
+* Gist: https://gist.github.com/iamsaief/dad6b1d3b4bb96d374d415cff0e01dfd 
+*/
+
+@use 'sass:math';
+
+// @include fluid-font-size(min_px, max_px);
+@mixin fluid-font-size(
+  $min_font_size,
+  $max_font_size,
+  $min_viewport: 360px,
+  $max_viewport: 1200px
+) {
+  font-size: clamp(
+    $min_font_size,
+    get-fluid-size(
+      $min_font_size,
+      $max_font_size,
+      $min_viewport,
+      $max_viewport
+    ),
+    $max_font_size
+  );
+}
+
+@function get-fluid-size(
+  $min_font_size,
+  $max_font_size,
+  $min_viewport,
+  $max_viewport
+) {
+  $min_font_size_in_rem: #{math.div(strip-unit($min_font_size), 16)}rem;
+  $font_size_diff: strip-unit($max_font_size) - strip-unit($min_font_size);
+  $viewport_diff: strip-unit($max_viewport) - strip-unit($min_viewport);
+
+  $fluid_size: calc(
+    $min_font_size_in_rem + $font_size_diff *
+      ((100vw - $min_viewport) / ($viewport_diff))
+  );
+
+  @return $fluid-size;
+}
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return math.div($number, ($number * 0) + 1);
+  }
+
+  @return $number;
+}
+
+// $fluid-sizes($name, $max, $min)
+$fluid-sizes: (
+  'h1' 60px 48px,
+  'h2' 48px 36px,
+  'h3' 36px 30px,
+  'h4' 30px 24px,
+  'h5' 24px 20px,
+  'h6' 20px 18px,
+  'p' 16px 14px
+);
+
+@each $name, $max, $min in $fluid-sizes {
+  .fluid-text-#{$name} {
+    @include fluid-font-size($min, $max);
+  }
+}

@@ -1,0 +1,88 @@
+.btn {
+  width: auto;
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: var(--accent-color);
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  transition: all 0.2s ease-in;
+
+  &_login {
+    color: var(--text-color);
+    border: 1px solid #b7b7b7;
+    background-color: transparent;
+  }
+
+  &_signup {
+    background-color: var(--main-color);
+  }
+
+  &_form-search {
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &_form-subscribe {
+    height: 48px;
+    background-color: var(--main-color);
+  }
+
+  &_prev,
+  &_next,
+  &_scroll-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 48px;
+    max-height: 48px;
+    padding: 12px;
+    border-radius: 50%;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &_prev {
+    background-color: #fff;
+    border: 1px solid var(--second-text-color);
+  }
+
+  &_scroll-up {
+    position: fixed;
+    right: 30px;
+    bottom: 60px;
+    opacity: 0;
+    border: 2px solid #fff;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    z-index: 1000;
+
+    @include respond(1023) {
+      display: none !important;
+    }
+
+    svg {
+      transform: rotate(-90deg);
+    }
+
+    &:not(.hide) {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+  }
+
+  &:hover {
+    opacity: 0.8;
+    // background-color: color-mix(in srgb, var(--accent-color), white 20%);
+  }
+}
