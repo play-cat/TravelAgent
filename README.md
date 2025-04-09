@@ -3,6 +3,11 @@
 ## Demo
 https://play-cat.github.io/TravelAgent/
 
+## 📸 Screenshot
+
+![Screenshot](https://github.com/play-cat/TravelAgent/raw/master/screenshot.jpg)
+
+
 ## 🔧 Technologies
 
 - **HTML5**
@@ -27,6 +32,3 @@ https://play-cat.github.io/TravelAgent/
 - ✅ Scroll animations
 - ✅ Optimized assets for production build
 
-## 📸 Screenshot
-
-![Screenshot](https://github.com/play-cat/TravelAgent/raw/master/screenshot.jpg)
