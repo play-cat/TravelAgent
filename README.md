@@ -37,3 +37,7 @@ https://play-cat.github.io/TravelAgent/
 - ✅ Scroll-to-top button
 - ✅ Scroll animations
 - ✅ Optimized assets for production build
+
+## For communication
+
+Email: [localhost83@gmail.com](mailto:localhost83@gmail.com)
